@@ -21,7 +21,10 @@ cout<< "4. Abre el tcpdump."<<endl;
 cout<< "5. Comprueba la versión del Kernel."<<endl;
 
 cout<< "6. Te muestra el nombre de tu dispositivo."<<endl;
-
+cout<< "\n";
+cout<< "\n";
+  cout<< "\n";
+  cout<< "\n";
 cout<< "¿Que opción quieres elegir?"<<endl;
 
 cin>>o;
@@ -62,8 +65,8 @@ cout<<"Vayase a un sistema gráfico y ejecute de nuevo el programa.";
 
 else{
 
-cout<<"La letra que has pulsado no sirve para nada en este caso, pruebe otra vez ejecutando el programa.";
-
+cout<<"La letra que has pulsado no sirve para nada en este caso";
+return case;
 }
 
 break;
@@ -97,7 +100,7 @@ break;
 default:
 
 cout<<"No hay otra opción.";
-
+return case;
 }
 
 break;
@@ -127,7 +130,7 @@ break;
 default:
 
 cout<<"Esa opción no existe.";
-
+main();
 }
 
 cout<<"\n";
