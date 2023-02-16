@@ -99,7 +99,6 @@ break;
 default:
 
 cout<<"No hay otra opción.";
-return case;
 }
 
 break;
