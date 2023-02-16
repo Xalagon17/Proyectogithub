@@ -66,7 +66,6 @@ cout<<"Vayase a un sistema gráfico y ejecute de nuevo el programa.";
 else{
 
 cout<<"La letra que has pulsado no sirve para nada en este caso";
-return case;
 }
 
 break;
