@@ -3,6 +3,7 @@
 This project contains two files:
 1. setup.cpp
 2. herramienta.cpp
+3. Fireshark.cpp
 
 The file to execute first is setup.cpp since it contains system upgrade and update, and also the incorporation of wireshark and tcpdump.
 
@@ -25,3 +26,9 @@ I am going to explain the herraminta.cpp file in several steps:
 7. If you enter the number 5, it will display the version of the linux kernel on the screen.
 
 8. And finally if you enter the number 6, it shows you the name of the machine.
+
+Fireshark.cpp consists of 4 cases to snort the traffic in Tcpdump:
+1. With ICMP protocol
+2. With HTTP protocol
+3. With TCP protocol
+4. With DHCP protocol
