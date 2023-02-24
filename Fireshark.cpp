@@ -2,11 +2,15 @@
 #include <cstdlib>
 using namespace std;
 int main(){
-char caso;
-cout<<"Escriba el protocolo en el cual quieres abrir el tcpdump: ";
+int caso;
+    cout<<"Caso 1: ICMP"<<endl;
+    cout<<"Caso 2: HTTP"<<endl;
+    cout<<"Caso 3: TCP"<<endl;
+    cout<<"Caso 4: DHCP"<<endl;
+cout<<"¿En cual caso quieres abrir el tcpdump?";
 cin>>caso;
 switch(caso){
-    case ICMP:
+    case 1:
         cout<<"       OSI              PDU              TCP/IP"<<endl;
         cout<<"+---------------+----------------+------------------+"<<endl;
         cout<<"| Aplicación    |                |                  |"<<endl;
@@ -31,7 +35,7 @@ switch(caso){
         system("tcpdump icmp");
         break;
 
-    case HTTP:
+    case 2:
     cout<<"       OSI              PDU              TCP/IP"<<endl;
         cout<<"+---------------+----------------+------------------+"<<endl;
         cout<<"| Aplicación    |                |                  |"<<endl;
@@ -55,7 +59,7 @@ switch(caso){
         system("tcpdump tcp port http");
         break;
 
-        case TCP:
+        case 3:
     cout<<"       OSI              PDU              TCP/IP"<<endl;
         cout<<"+---------------+----------------+------------------+"<<endl;
         cout<<"| Aplicación    |                |                  |"<<endl;
@@ -79,7 +83,7 @@ switch(caso){
         system("tcpdump tcp");
         break;
 
-        case DHCP:
+        case 4:
     cout<<"       OSI              PDU              TCP/IP"<<endl;
         cout<<"+---------------+----------------+------------------+"<<endl;
         cout<<"| Aplicación    |                |                  |"<<endl;
